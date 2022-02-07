@@ -1,0 +1,19 @@
+@font-face {
+  font-family: header-font;
+  src: url(/assets/fonts/SWISSKO.TTF);
+}
+
+@font-face {
+  font-family: poppins-regular;
+  src: url(/assets/fonts/POPPINS-REGULAR.TTF);
+}
+
+@font-face {
+  font-family: poppins-bold;
+  src: url(/assets/fonts/POPPINS-BOLD.TTF);
+}
+
+@font-face {
+  font-family: header-alt;
+  src: url(/assets/fonts/SWISSCK.TTF);
+}

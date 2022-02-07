@@ -1,0 +1,201 @@
+.header {
+  height: 20vh;
+  background-color: #006EB8;
+  padding-top: 5rem;
+}
+
+.header div {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.header a {
+  margin: 0 1rem;
+
+}
+
+.header h1 {
+  margin: 0;
+  font-family: header-alt;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 5rem;
+  text-align: center;
+}
+
+
+.demo {
+}
+
+.demo .playground {
+  background-color: #badae4;
+  height: 60vh;
+}
+
+.node {
+  background-color: #006eb8;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: poppins-bold;
+  font-size: 2rem;
+  position: relative;
+  left:0;
+  top: 0; 
+}
+
+.start {
+  background-color: green;
+}
+
+.target {
+  background-color: red;
+}
+
+.actions {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.actions .green {
+  background-color: #b7ff4f;
+}
+
+.actions p {
+  color: red;
+  font-family: poppins-regular;
+  display: inline;
+}
+
+.actions button {
+  font-family: poppins-bold;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  background-color: #efefef;
+  transition: all 0.2s ease-out;
+}
+
+.actions button:hover {
+  background-color: #dbd9d9;
+}
+
+.info {
+  padding-top: 3rem;
+}
+
+.info h2 {
+  color: #006EB8;
+  font-family: poppins-bold;
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+.info .content {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-info {
+  width: 50%;
+  padding: 5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.right-info img {
+  width: 30rem;
+}
+
+.left-info {
+  width: 50%;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.left-info h2 {
+  text-align: left;
+}
+
+.left-info p {
+  font-family: poppins-regular;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+@media screen and (max-height: 1000px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+  
+}
+
+@media screen and (max-width: 1000px) {
+  .info .content {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .left-info, .right-info {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .btn-solid, .btn-outline {
+    min-width: 5rem;
+    font-size: 0.7rem;
+    padding: 0.4rem;
+  }
+
+  .left-info, .right-info {
+    padding: 0;
+  }
+
+  .left-info div {
+    padding: 1rem;
+  }
+
+  .left-info p {
+    font-size: 0.8rem;
+  }
+
+  .left-info h2 {
+    font-size: 1.2rem;
+  }
+  
+  .right-info img {
+    width: 70%;
+    margin-bottom: 1rem;
+  }
+
+  .actions {
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+  
+  .actions button {
+    margin-bottom: 0.5rem;
+  }
+}

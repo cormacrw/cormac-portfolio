@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/fonts.css">
+  <link rel="stylesheet" href="/assets/css/searchapp.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZRSDGS6YH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4ZRSDGS6YH');
+  </script>
+
+  <title>Cormac Williamson - Search App</title>
+</head>
+<body>
+  <section class="header">
+    <h1>DIJKSTRA SEARCH ALGORITHM</h1>
+    <div>
+      <a href="/"><button class="btn-outline">GO BACK</button></a>
+      <a href="https://github.com/cormacrw/dijkstra-search" target="_blank"><button class="btn-solid">VIEW CODE</button></a>
+    </div>
+  </section>
+
+  <section class="demo">
+    <div class="playground" id="playground">
+      <div class="actions">
+        <button id="add_node">Add Node</button>
+        <button id="clear">Clear</button>
+        <button id="add_arrow">Add Arrow</button>
+        <button id="set_target">Set Target Node</button>
+        <button id="create_default">Default</button>
+        <button id="find_path" class="green">Find Path</button>
+        <p id="error"></p>
+        <p id="info" style="color: black"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <h2>HOW IT WORKS</h2>
+    <div class="content">
+      <div class="left-info">
+        <div>
+          <h2>JavaScript</h2>
+          <p>The original application that was made for the coursework was purely a command line application, therefore for a more accessible demo a front end app was written in JavaScript.</p>
+          <h2>Java</h2>
+          <p>The Dijkstra algorithm that the above demo uses is written in Java. This was the primary language that most of my university courses used.</p>
+          <h2>Serverless</h2>
+          <p>Since the original app was just a command line program, it had to be adopted slightly so that it was easier to demonstrate. Therefore the codebase was made to be deployed into an AWS Lambda Function using Serverless.</p>
+        </div>
+      </div>
+      <div class="right-info">
+        <img src="/assets/svg/js-java-serverless.svg" alt="" srcset="">
+      </div>
+    </div>
+  </section>
+  
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="/assets/libs/leader-line.min.js"></script>
+  <script src="/assets/libs/plain-draggable.min.js"></script>
+  <script src="/assets/js/searchapp.js"></script>
+</body>
+</html>

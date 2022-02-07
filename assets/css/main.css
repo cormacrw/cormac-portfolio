@@ -1,0 +1,57 @@
+
+html, body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.btn-solid {
+  background-color: white;
+  border: 2px solid white;
+  outline: none;
+  font-family: poppins-regular;
+  font-size: 1.5rem;
+  color: #006EB8;
+  padding: 0.5rem;
+  min-width: 12rem;
+  border-radius: 0.4rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background-color: #00000000;
+  outline: none;
+  border: 2px solid white;
+  font-family: poppins-regular;
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.5rem;
+  min-width: 12rem;
+  border-radius: 0.4rem;
+  margin-left: 1rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: #006EB8;
+}
+
+.btn-solid:hover {
+  background-color: #00000000;
+  color: white;
+}
+
+
+@media screen and (max-height: 1000px) {
+  .btn-outline, .btn-solid {
+    font-size: 1rem;
+  }
+}

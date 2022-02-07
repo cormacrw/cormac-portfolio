@@ -1,0 +1,168 @@
+.header {
+  height: 20vh;
+  background-color: #006EB8;
+  padding-top: 5rem;
+}
+
+.header div {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.header a {
+  margin: 0 1rem;
+
+}
+
+.header h1 {
+  margin: 0;
+  font-family: header-alt;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.brief {
+  /* background-color: #F6F7F9; */
+  display: flex;
+  flex-direction: row;
+}
+
+.brief h2 {
+  color: #006EB8;
+  font-family: poppins-bold;
+  font-size: 2rem;
+}
+
+.brief p {
+  font-family: poppins-regular;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.left-brief {
+  width: 50%;
+  padding: 7rem;
+  align-items: center;
+  display: flex;
+}
+
+.right-brief {
+  width: 50%;
+  padding: 5rem;
+}
+
+.right-brief .img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.right-brief img {
+  height: 40vh;
+  margin: 0 1rem;
+}
+
+.right-brief p {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.tech {
+  background-color:#F6F7F9;
+  padding-top: 3rem;
+}
+
+.tech h2 {
+  color: #006EB8;
+  font-family: poppins-bold;
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+.tech .content {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-tech {
+  width: 50%;
+  padding: 5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.left-tech img {
+  width: 30rem;
+}
+
+.right-tech {
+  width: 50%;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.right-tech h2 {
+  text-align: left;
+}
+
+.right-tech p {
+  font-family: poppins-regular;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .brief, .tech .content {
+    flex-direction: column;
+  }
+
+  .left-brief, .right-brief, .left-tech, .right-tech {
+    width: 100%;
+    padding: 0;
+  }
+
+  .left-brief div {
+    padding: 2rem;
+  }
+
+  .tech {
+    padding: 2rem;
+  }
+
+
+  .left-tech img {
+    width: 20rem;
+  }
+
+  .left-tech {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .btn-solid, .btn-outline {
+    min-width: 5rem;
+    font-size: 0.7rem;
+    padding: 0.4rem;
+  }
+
+  .header a {
+    margin: 0 0.5rem;
+  }
+
+  .brief h2, .right-tech h2 {
+    font-size: 1.5rem;
+  }
+
+  .brief p, .right-tech p {
+    font-size: 0.8rem;
+  }
+}
