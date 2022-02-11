@@ -136,7 +136,7 @@ h3 {
   height: 2rem;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1700px) {
   .left-content {
     padding: 4rem;
   }
