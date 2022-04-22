@@ -185,4 +185,13 @@
   .brief p, .right-tech p {
     font-size: 0.8rem;
   }
+
+  .img-container {
+    flex-direction: column;
+  }
+
+  .img-container img {
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
 }
