@@ -12,11 +12,11 @@ h2 {
 }
 
 .bio {
-  font-family: poppins-regular;
+  font-family: poppins-bold;
   color: white;
   max-width: 40rem;
-  font-size: 1.2rem;
-  margin: 0.5rem 0 2rem 0;
+  font-size: 2rem;
+  margin: 0rem 0 2rem 0;
 }
 
 .splash-left {
@@ -54,20 +54,30 @@ h2 {
   margin: 0 auto;
 }
 
-.right-content svg {
+.right-content img {
   width: 30rem;
 }
 
-.projects,
-.about {
-  background-color: #f6f7f9;
+.projects {
+  background-color: white;
   min-height: 30vh;
   padding-top: 3rem;
   padding-bottom: 5rem;
 }
 
 .about {
+  padding-top: 10rem;
   background-color: white;
+  min-height: 20vh;
+  padding-bottom: 5rem;
+}
+
+.about-txt {
+  font-family: poppins-regular;
+  text-align: center;
+  width: 50%;
+  max-width: 30rem;
+  margin: 1rem auto 0 auto;
 }
 
 .carousel-container {
@@ -87,11 +97,11 @@ h2 {
   background-color: white;
   max-width: 30rem;
   min-width: 28rem;
-  box-shadow: 0px 0px 20px #28597116;
   margin: 0 2rem;
   border-radius: 0.8rem;
   padding: 2rem;
   margin-bottom: 3rem;
+  border: #f3f3f3 2px solid;
 }
 
 .card-body {
@@ -162,9 +172,13 @@ h3 {
     font-size: 5rem;
     line-height: 5rem;
   }
+
+  .right-content img {
+    width: 25rem;
+  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .header {
     display: flex;
     flex-direction: column-reverse;
@@ -273,6 +287,9 @@ h3 {
     min-height: 10rem;
     min-width: 0;
   }
+  .card-body {
+    height: auto;
+  }
 
   .card-body p {
     font-size: 0.7rem;
@@ -280,5 +297,9 @@ h3 {
 
   .button-row {
     font-size: 0.8rem;
+  }
+
+  .about-txt {
+    width: 80%;
   }
 }
