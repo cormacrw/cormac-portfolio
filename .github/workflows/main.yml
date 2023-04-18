@@ -19,5 +19,5 @@ jobs:
         with:
           region: us-east-1
           bucket: www.cormac.is
-          source: ''
-          target: ''
+          source: './'
+          target: './'
