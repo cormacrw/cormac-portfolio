@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Flash Card Mobile App",
+        "description": "This project is a mobile app built with React Native that allows users to create their own flash card deck and use them to study. This project was part of a coursework for my university course.",
+        "viewUrl": "/projects/flash-card-app",
+        "codeUrl": "https://github.com/cormacrw/flashcards-app",
+        "img": "flashcardapp.png"
+    },
+    {
+        "title": "Flash Card Mobile App",
+        "description": "This project is a mobile app built with React Native that allows users to create their own flash card deck and use them to study. This project was part of a coursework for my university course.",
+        "viewUrl": "/projects/flash-card-app",
+        "codeUrl": "https://github.com/cormacrw/flashcards-app",
+        "img": "flashcardapp.png"
+    }
+]
