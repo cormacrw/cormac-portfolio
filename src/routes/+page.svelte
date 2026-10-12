@@ -35,6 +35,61 @@
     boundaries of using AI to make me more efficient in my job.
   </p>
 
+  <section class="history" aria-labelledby="history-heading">
+    <h2 id="history-heading" class="title">Job history</h2>
+    <ol>
+      <li>
+        <p class="role">
+          Software Engineer
+          <span class="org">at <a href="https://hyper.com/" target="_blank" rel="noreferrer">Hyper<span class="sr"> (opens in a new tab)</span></a></span>
+        </p>
+        <p class="when"><time datetime="2026-06">Jun 2026</time> - Present</p>
+      </li>
+      <li>
+        <p class="role">
+          Software Engineer
+          <span class="org">at <a href="https://hibid.com/" target="_blank" rel="noreferrer">HiBid Auctions<span class="sr"> (opens in a new tab)</span></a></span>
+        </p>
+        <p class="when">
+          <time datetime="2025-06">Jun 2025</time> - <time datetime="2026-05">May 2026</time>
+        </p>
+      </li>
+      <li>
+        <p class="role">
+          Software Developer
+          <span class="org">at <a href="https://www.enterbridge.com/" target="_blank" rel="noreferrer">EnterBridge<span class="sr"> (opens in a new tab)</span></a></span>
+        </p>
+        <p class="when">
+          <time datetime="2023-07">Jul 2023</time> - <time datetime="2025-07">Jul 2025</time>
+        </p>
+      </li>
+      <li>
+        <p class="role">
+          Junior Software Developer
+          <span class="org">at <a href="https://www.enterbridge.com/" target="_blank" rel="noreferrer">EnterBridge<span class="sr"> (opens in a new tab)</span></a></span>
+        </p>
+        <p class="when">
+          <time datetime="2022-11">Nov 2022</time> - <time datetime="2023-06">Jun 2023</time>
+        </p>
+      </li>
+      <li>
+        <p class="role">
+          Software Intern
+          <span class="org">at <a href="https://www.codearcs.io/" target="_blank" rel="noreferrer">CodeArcs<span class="sr"> (opens in a new tab)</span></a></span>
+        </p>
+        <p class="when">
+          <time datetime="2019-09">Sep 2019</time> - <time datetime="2020-08">Aug 2020</time>
+        </p>
+      </li>
+      <li>
+        <p class="role">Intern <span class="org">at <span>MacLaurin Group</span></span></p>
+        <p class="when">
+          <time datetime="2019-06">Jun 2019</time> - <time datetime="2019-09">Sep 2019</time>
+        </p>
+      </li>
+    </ol>
+  </section>
+
   <nav aria-labelledby="links-heading">
     <h2 id="links-heading" class="title">Links</h2>
     <ul>
@@ -110,16 +165,89 @@
   .blurb {
     margin: 1.25rem 0 0;
     color: var(--ink);
+    font-size: 0.95rem;
     font-weight: 400;
     line-height: 1.5;
   }
 
+  .history,
   nav {
     margin-top: 2.5rem;
   }
 
+  .history .title,
   nav .title {
     margin-top: 0;
+  }
+
+  .history ol {
+    list-style: none;
+    margin: 1.15rem 0 0;
+    padding: 0;
+  }
+
+  .history li {
+    position: relative;
+    padding: 0 0 1.5rem 1.15rem;
+  }
+
+  .history li:last-child {
+    padding-bottom: 0;
+  }
+
+  .history li::before {
+    content: '';
+    position: absolute;
+    left: 0.13rem;
+    top: 0.4rem;
+    bottom: -0.4rem;
+    width: 1px;
+    background: color-mix(in srgb, var(--accent) 65%, var(--bg));
+  }
+
+  .history li:last-child::before {
+    display: none;
+  }
+
+  .history li::after {
+    content: '';
+    position: absolute;
+    left: 0.02rem;
+    top: 0.26rem;
+    width: 0.28rem;
+    height: 0.28rem;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--accent) 65%, var(--bg));
+  }
+
+  .role,
+  .org,
+  .when {
+    margin: 0;
+  }
+
+  .role {
+    font-size: 0.92rem;
+    font-weight: 560;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+  }
+
+  .org {
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .org a,
+  .org span {
+    font-style: italic;
+  }
+
+  .when {
+    margin-top: 0.1rem;
+    color: var(--muted);
+    font-size: 0.78rem;
+    line-height: 1.3;
   }
 
   ul {
@@ -131,7 +259,7 @@
     padding: 0;
   }
 
-  a {
+  nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,8 +275,22 @@
     text-transform: none;
   }
 
-  a:hover {
+  .org a {
+    color: inherit;
+    text-decoration-line: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+  }
+
+  nav a:hover {
     color: var(--accent);
+  }
+
+  .org a:hover,
+  .org a:focus-visible {
+    color: var(--accent);
+    text-decoration-color: currentColor;
   }
 
   a:focus-visible {
