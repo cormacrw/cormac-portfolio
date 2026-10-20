@@ -130,9 +130,14 @@
 <style>
   .backdrop {
     position: fixed;
-    inset: 0;
     z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100lvh;
     pointer-events: none;
+    transform: translateZ(0);
     background: linear-gradient(160deg, #031f18, #0a4f3c 50%, #063528);
   }
 

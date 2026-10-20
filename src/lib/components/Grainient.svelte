@@ -98,7 +98,7 @@
     try {
       renderer = new Renderer({
         webgl: 2,
-        alpha: true,
+        alpha: false,
         antialias: false,
         dpr: Math.min(window.devicePixelRatio || 1, 2)
       })
@@ -107,6 +107,7 @@
     }
 
     const gl = renderer.gl
+    gl.clearColor(0.012, 0.122, 0.094, 1)
     const canvas = gl.canvas as HTMLCanvasElement
     canvas.style.width = '100%'
     canvas.style.height = '100%'
@@ -223,12 +224,22 @@ void main(){ vec4 o=vec4(0.0); mainImage(o,gl_FragCoord.xy); fragColor=o; }`
 
     const mesh = new Mesh(gl, { geometry, program })
 
+    let sizedWidth = 0
+    let sizedHeight = 0
+
     const setSize = () => {
       if (!containerRef) return
       const rect = containerRef.getBoundingClientRect()
       const width = Math.max(1, Math.floor(rect.width))
       const height = Math.max(1, Math.floor(rect.height))
+      const widthChanged = width !== sizedWidth
+      const heightDelta = Math.abs(height - sizedHeight)
+      if (sizedHeight !== 0 && !widthChanged && heightDelta < 160) return
+      sizedWidth = width
+      sizedHeight = height
       renderer.setSize(width, height)
+      canvas.style.width = '100%'
+      canvas.style.height = '100%'
       const resolution = program.uniforms.iResolution.value as Float32Array
       resolution[0] = gl.drawingBufferWidth
       resolution[1] = gl.drawingBufferHeight
@@ -292,9 +303,9 @@ void main(){ vec4 o=vec4(0.0); mainImage(o,gl_FragCoord.xy); fragColor=o; }`
 
 <style>
   .grainient {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    inset: 0;
     overflow: hidden;
+    transform: translateZ(0);
   }
 </style>
