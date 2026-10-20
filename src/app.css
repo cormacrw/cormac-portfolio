@@ -13,9 +13,17 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  background-color: var(--bg);
+  background-image: linear-gradient(160deg, #031f18, #0a4f3c 50%, #063528);
+  background-repeat: no-repeat;
+  background-size: 100% 100lvh;
+}
+
 html {
-  background: var(--bg);
   color: var(--ink);
+  min-height: 100%;
 }
 
 body {

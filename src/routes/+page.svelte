@@ -131,11 +131,11 @@
   .backdrop {
     position: fixed;
     z-index: 0;
-    top: 0;
+    top: -8rem;
     left: 0;
     width: 100%;
-    height: 100vh;
-    height: 100lvh;
+    height: calc(100vh + 16rem);
+    height: calc(100lvh + 16rem);
     pointer-events: none;
     transform: translateZ(0);
     background: linear-gradient(160deg, #031f18, #0a4f3c 50%, #063528);
@@ -146,7 +146,8 @@
     z-index: 1;
     max-width: 34rem;
     margin: 0 auto;
-    padding: 4.5rem 1.5rem 3rem;
+    padding: max(4.5rem, env(safe-area-inset-top)) max(1.5rem, env(safe-area-inset-right))
+      max(3rem, env(safe-area-inset-bottom)) max(1.5rem, env(safe-area-inset-left));
   }
 
   h1 {
@@ -317,7 +318,7 @@
 
   @media (max-width: 480px) {
     main {
-      padding-top: 3rem;
+      padding-top: max(3rem, env(safe-area-inset-top));
     }
 
     ul {
